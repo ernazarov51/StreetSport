@@ -1,0 +1,58 @@
+[
+  {
+    "model": "authentication.user",
+    "pk": 1,
+    "fields": {
+      "username": "owner",
+      "password": "pbkdf2_sha256$260000$test$hash",
+      "role": "owner"
+    }
+  },
+  {
+    "model": "authentication.user",
+    "pk": 2,
+    "fields": {
+      "username": "manager",
+      "password": "pbkdf2_sha256$260000$test$hash",
+      "role": "manager"
+    }
+  },
+  {
+    "model": "authentication.user",
+    "pk": 3,
+    "fields": {
+      "username": "usernake",
+      "password": "pbkdf2_sha256$260000$test$hash",
+      "role": "admin"
+    }
+  },
+  {
+    "model": "apps.stadium",
+    "pk": 1,
+    "fields": {
+      "name": "Yunusobod Stadium",
+      "region": "yunusobod",
+      "location_note": "Bodomzor",
+      "owner": 1,
+      "manager": 2,
+      "price": "150.00"
+    }
+  },
+  {
+    "model": "apps.order",
+    "pk": 1,
+    "fields": {
+      "user": 3,
+      "stadium": 1,
+      "start_time": "2024-04-10T10:00:00Z",
+      "end_time": "2024-04-10T12:00:00Z"
+    }
+  },
+  {
+    "model": "apps.platformstadium",
+    "pk": 1,
+    "fields": {
+      "stadium": 1
+    }
+  }
+]
