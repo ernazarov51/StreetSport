@@ -1,0 +1,5 @@
+.idea
+.venv
+student/migrations/*
+support/migrations/*
+db.sqlite3

@@ -1,0 +1,26 @@
+StreetSport ->
+
+Toshkent Stadionlarini bron qilish xizmatini yo'lga qo'yish
+
+roles:
+Admin, Owner, Manager, User
+
+Task 1 -> Create Permissions for all roles
+
+endpoints:
+
+admin:
+POST api/v1/stadium/create -> Stadion ni ro'yxatdan o'tkazish
+DELETE api/v1/stadium/delete -> Stadion ni o'chirish
+GET api/v1/stadium/count -> Mavjud stadionlarning sonini ko'rish
+PUT/PATCH api/v1/stadium/edit -> Stadion ma'lumotlarini ediq qilish
+
+owner:
+POST api/v1/owner/stadium/create -> Ozi uchun yangi stadion qoshish
+GET api/v1/owner/stadium/stats -> Ozining stadionlarini statistikalarini kora olishi
+GET api/v1/owner/booked/stadiums
+POST api/v1/owner/attach/mannager/<int:stadium_id>/ Har bir stadionga manager biriktirish
+
+user:
+GET api/v1/get/stadiums
+POST api/v1/booking/stadium
